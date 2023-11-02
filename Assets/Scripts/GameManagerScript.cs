@@ -114,7 +114,7 @@ public class GameManagerScript : MonoBehaviour
             }
         }
     }
-    
+
     private bool SwapIfValid(int i, int offset, int colCheck)
     {
         if (((i % size) != colCheck) && ((i + offset) == emptyLocation))
@@ -168,9 +168,10 @@ public class GameManagerScript : MonoBehaviour
     {
         int count = 0;
         int last = 0;
-        while (count < (size * size * size * size)){
+        while (count < (size * size * size * size))
+        {
             int random = Random.Range(0, size * size);
-            if(random == last) { continue; }
+            if (random == last) { continue; }
             last = emptyLocation;
             if (SwapIfValid(random, -size, size))
             {
@@ -199,14 +200,4 @@ public class GameManagerScript : MonoBehaviour
             Destroy(piece);
         }
     }
-
-
-
-
-
-
-
-
-
-
 }
