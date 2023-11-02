@@ -13,6 +13,7 @@ public class GameManagerScript : MonoBehaviour
     public Transform gamePiecePrefab;
     public int swapCount = 0;
     public Text swapCountText;
+    public Text swapCountTextSide;
     public AudioClip click;
     public AudioClip completed;
     public GameObject completedBanner;
@@ -42,6 +43,7 @@ public class GameManagerScript : MonoBehaviour
             }
         }
         swapCountText.text = swapCount.ToString();
+        swapCountTextSide.text = swapCount.ToString();
     }
 
     private void ClickEvent()
