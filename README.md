@@ -10,4 +10,3 @@ Play [here](https://connect-slide-121.itch.io/sliding-puzzle)
 
 ![alt text](https://github.com/Connectslide121/Sliding-puzzle/blob/master/Captura%20de%20pantalla%202023-11-03%20121453.png)
 
-![alt text](https://github.com/Connectslide121/Sliding-puzzle/blob/master/Captura%20de%20pantalla%202023-11-03%20121810.png)
