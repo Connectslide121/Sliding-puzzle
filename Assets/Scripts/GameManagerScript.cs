@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManagerScript : MonoBehaviour
@@ -199,5 +200,10 @@ public class GameManagerScript : MonoBehaviour
         {
             Destroy(piece);
         }
+    }
+
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadSceneAsync("MainMenu");
     }
 }
