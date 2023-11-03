@@ -18,6 +18,7 @@ public class GameManagerScript : MonoBehaviour
     public AudioClip click;
     public AudioClip completed;
     public GameObject completedBanner;
+    public GameObject instructions;
 
     private int emptyLocation;
     private List<Transform> gamePieces;
@@ -141,6 +142,7 @@ public class GameManagerScript : MonoBehaviour
         }
         lastPiece.gameObject.SetActive(true);
         completedBanner.gameObject.SetActive(true);
+        instructions.gameObject.SetActive(false);
         Camera.main.GetComponent<AudioSource>().PlayOneShot(completed);
         complete = true;
         return true;
@@ -152,6 +154,7 @@ public class GameManagerScript : MonoBehaviour
         {
             lastPiece.gameObject.SetActive(false);
             completedBanner.gameObject.SetActive(false);
+            instructions.gameObject.SetActive(true);
             complete = false;
             shuffling = true;
             StartCoroutine(WaitShuffle());
